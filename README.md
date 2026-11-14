@@ -2,7 +2,7 @@
 
 A merchant in Indonesia shows one QR. A local customer pays rupiah with GoPay or DANA. A crypto customer pays USDC from any chain. The merchant receives USDC on NEAR. No customer needs a NEAR account. No merchant needs NEAR for gas.
 
-Live demo: https://satuqr.pages.dev
+Live demo: https://satuqr.aufa.eu.cc (also at https://satuqr.pages.dev)
 Backend: https://api.aufa.eu.cc
 
 Track: Real-World Money (`realworld`), second track Unstoppable DeFi (`defi`).
@@ -12,7 +12,7 @@ Hackathon: NEAR Hackathon 2026, nearhackathon.com. Deadline 14 Nov 2026 23:59 UT
 
 You need only a browser. No account. No wallet.
 
-1. Open https://satuqr.pages.dev
+1. Open https://satuqr.aufa.eu.cc
 2. Type a merchant name, for example `Kopi Senja`, and an amount, for example `50000`.
 3. Click the create invoice button. See one QR, one invoice ID, and the USDC value of Rp50.000.
 4. Click the crypto pay option. Pick an origin asset, for example USDC on Solana.
@@ -90,7 +90,7 @@ cd backend && npm test
 
 ## Demo video script (60 to 90 seconds)
 
-Record the phone screen on https://satuqr.pages.dev. No face needed. One take per scene.
+Record the phone screen on https://satuqr.aufa.eu.cc. No face needed. One take per scene.
 
 1. (0-10s) Type `Kopi Senja`, Rp50.000. Tap create. Show the QR and the USDC value.
 2. (10-30s) Tap pay with crypto. Pick USDC on Solana. Show the quote: deposit amount, fee, rate.
@@ -105,13 +105,13 @@ Screenshot resources for the video edit: `video-assets/` (01-hero.png … 09-clo
 
 Satu QR for 42 million Indonesian merchants. Local customers pay rupiah with QRIS. Crypto customers pay USDC from any chain. The merchant receives USDC on NEAR, no NEAR account needed.
 
-Live demo: https://satuqr.pages.dev
+Live demo: https://satuqr.aufa.eu.cc
 NEAR Hackathon 2026, Real-World Money track.
 
 ## Submit checklist
 
 - [x] Backend live at https://api.aufa.eu.cc
-- [x] Frontend live at https://satuqr.pages.dev
+- [x] Frontend live at https://satuqr.aufa.eu.cc (custom domain; also https://satuqr.pages.dev)
 - [x] Merchant NEAR account set: `satuqr.near`, verified on mainnet
 - [x] README with do X, see Y steps
 - [x] LICENSE (MIT)

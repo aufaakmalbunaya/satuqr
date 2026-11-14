@@ -3,7 +3,7 @@
 A merchant in Indonesia shows one QR. A local customer pays rupiah with GoPay or DANA. A crypto customer pays USDC from any chain. The merchant receives USDC on NEAR. No customer needs a NEAR account. No merchant needs NEAR for gas.
 
 Live demo: https://satuqr.pages.dev
-Backend: https://satuqr-backend.qriscode.workers.dev
+Backend: https://api.aufa.eu.cc
 
 Track: Real-World Money (`realworld`), second track Unstoppable DeFi (`defi`).
 Hackathon: NEAR Hackathon 2026, nearhackathon.com. Deadline 14 Nov 2026 23:59 UTC (15 Nov 2026 06:59 WIB).
@@ -21,15 +21,15 @@ You need only a browser. No account. No wallet.
 
 ## Try the backend (do X, see Y)
 
-Base URL: `https://satuqr-backend.qriscode.workers.dev`
+Base URL: `https://api.aufa.eu.cc`
 
-1. Check health. `curl https://satuqr-backend.qriscode.workers.dev/health`
+1. Check health. `curl https://api.aufa.eu.cc/health`
    See `ok: true`, `merchantConfigured: true`, `liveEnabled: false`.
-2. Create an invoice. `curl -X POST https://satuqr-backend.qriscode.workers.dev/api/invoices -d '{"merchant":"Kopi Senja","amountIdr":50000}'`
+2. Create an invoice. `curl -X POST https://api.aufa.eu.cc/api/invoices -d '{"merchant":"Kopi Senja","amountIdr":50000}'`
    See `usdc`, the live USD to IDR rate, and `qrPayload` with `qrDemo: true`.
-3. Ask a dry quote. `curl -X POST https://satuqr-backend.qriscode.workers.dev/api/invoices/<id>/quote -d '{"originAsset":"nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near","refundTo":"<your Solana address>"}'`
+3. Ask a dry quote. `curl -X POST https://api.aufa.eu.cc/api/invoices/<id>/quote -d '{"originAsset":"nep141:sol-5ce3bf3a31af18be40ba30f721101b4341690186.omft.near","refundTo":"<your Solana address>"}'`
    See `dry: true`, `fees.amountIn`, `fees.amountOut`, and the USD values side by side. No deposit address appears. No funds move.
-4. Check status. `curl https://satuqr-backend.qriscode.workers.dev/api/invoices/<id>/status`
+4. Check status. `curl https://api.aufa.eu.cc/api/invoices/<id>/status`
    See `live: false` and `status: pending`, with the note that this is a dry quote only.
 
 ## How it works
@@ -104,7 +104,7 @@ NEAR Hackathon 2026, Real-World Money track.
 
 ## Submit checklist
 
-- [x] Backend live at https://satuqr-backend.qriscode.workers.dev
+- [x] Backend live at https://api.aufa.eu.cc
 - [x] Frontend live at https://satuqr.pages.dev
 - [x] Merchant NEAR account set: `satuqr.near`, verified on mainnet
 - [x] README with do X, see Y steps

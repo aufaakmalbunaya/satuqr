@@ -172,6 +172,7 @@ textarea { resize: vertical; }
 .qr-meta { color: var(--slate); margin-bottom: 0.2em; }
 .qr-id { font-size: 0.85rem; color: var(--slate); word-break: break-all; }
 .qr-card .row { justify-content: center; margin-top: 1rem; }
+.qr-card .fine { margin: 1.2rem 0 0.2rem; line-height: 1.6; }
 
 /* fees */
 .fees { display: grid; grid-template-columns: auto 1fr; gap: 0.35rem 1rem; margin: 0 0 1rem; }

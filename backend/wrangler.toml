@@ -1,0 +1,18 @@
+name = "satuqr-backend"
+main = "src/index.js"
+compatibility_date = "2026-11-14"
+
+# KV namespace dibuat via scripts/create-kv.py (API, akun Lutfiharis).
+# Isi id di bawah setelah create-kv.py mencetaknya.
+[[kv_namespaces]]
+binding = "SATUQR_KV"
+id = "07b6e01e5d4c41359821607b586403aa"
+
+# Vars (bukan secret, boleh di sini atau di metadata deploy):
+# MERCHANT_NEAR_ACCOUNT = alamat NEAR merchant penerima USDC.
+#   Wajib untuk live quote. Dry quote jalan tanpa ini (fallback intents.near).
+# ALLOW_LIVE = "0" (dry-run saja). Ubah ke "1" hanya untuk demo live.
+# Secrets (jangan tulis di sini; set lewat dashboard atau API secrets):
+#   ADMIN_PASSWORD - menjaga daftar merchant, CSV, dan mark-paid.
+#   ONECLICK_API_KEY - opsional; tanpa ini fee 1Click 25 bps, dengan ini 20 bps
+#     (1 bp untuk pasangan stablecoin).

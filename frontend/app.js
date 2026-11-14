@@ -1,13 +1,22 @@
 // SatuQR frontend. Talks to the Cloudflare Worker backend.
 // API base is public and read-only for demo data; no secrets live here.
-const API = "https://satuqr-backend.qriscode.workers.dev";
+const API = "https://api.aufa.eu.cc";
 const DEMO_INVOICE_ID = "sq_mwg9zhvggornfw";
 
 const $ = (id) => document.getElementById(id);
 const idr = (n) => "Rp" + Number(n).toLocaleString("id-ID");
 
-async function api(path, opts) {
-  const res = await fetch(API + path, opts);
+async function api(path, opts, retries = 1) {
+  let res;
+  try {
+    res = await fetch(API + path, opts);
+  } catch (err) {
+    if (retries > 0) {
+      await new Promise((r) => setTimeout(r, 800));
+      return api(path, opts, retries - 1);
+    }
+    throw new Error("Tidak bisa terhubung ke backend (" + (err.message || "fetch gagal") + "). Periksa koneksi internet, lalu coba lagi.");
+  }
   const data = await res.json().catch(() => ({}));
   if (!res.ok) throw new Error(data.error || ("HTTP " + res.status));
   return data;

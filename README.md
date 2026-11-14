@@ -99,6 +99,8 @@ Record the phone screen on https://satuqr.pages.dev. No face needed. One take pe
 
 Keep the demo online until 25 Nov 2026. Judges check it after the deadline.
 
+Screenshot resources for the video edit: `video-assets/` (01-hero.png … 09-closing.png, taken end to end on the live demo) + `video-assets/VIDEO_BRIEF.md` (scene plan, timings, narration).
+
 ## Post on X (draft)
 
 Satu QR for 42 million Indonesian merchants. Local customers pay rupiah with QRIS. Crypto customers pay USDC from any chain. The merchant receives USDC on NEAR, no NEAR account needed.

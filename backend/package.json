@@ -1,0 +1,1 @@
+{"description":"SatuQR backend: one QR for rupiah and crypto. Cloudflare Worker, zero dependencies.","name":"satuqr-backend","private":true,"scripts":{"test":"node --test test/qris.test.js test/oneclick.test.js test/handler.test.js"},"type":"module","version":"0.1.0"}

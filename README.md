@@ -65,6 +65,10 @@ Frontend: deploy `frontend/` to any static host. Set the API base URL in `fronte
 - QRIS MDR since 1 Oct 2026: micro merchants pay 0% up to Rp500.000, then 0.3% above that. Small, medium, and large merchants pay 0% up to Rp100.000, then 0.7% above that.
 - `ADMIN_PASSWORD` is not set on the live demo, so the merchant list, CSV export, and mark-paid are open. Set it before real use.
 
+## Roadmap
+
+- Direct IDR payout: an off-ramp partner sells the merchant USDC and sends rupiah to the merchant bank or e-wallet, so the merchant no longer converts by hand. Needs a licensed Indonesian exchange or payment gateway, merchant KYC, and a bank disbursement integration. The conversion fee stays near 1%; the gain is convenience, not a lower cost.
+
 ## What is new in the hackathon window, and what is reused
 
 Reused baseline, from the author's own earlier code:
@@ -109,7 +113,7 @@ NEAR Hackathon 2026, Real-World Money track.
 - [x] Merchant NEAR account set: `satuqr.near`, verified on mainnet
 - [x] README with do X, see Y steps
 - [x] LICENSE (MIT)
-- [ ] Public repo on GitHub (this folder is not a git repo yet: `git init`, push to github.com/aufaakmalbunaya/satuqr)
+- [x] Public repo on GitHub: https://github.com/aufaakmalbunaya/satuqr
 - [ ] Demo video 60-90 seconds, link in README and in the form
 - [ ] Post the demo on X
 - [ ] Submit at nearhackathon.com, tracks `realworld` + `defi`, before 15 Nov 2026 06:59 WIB

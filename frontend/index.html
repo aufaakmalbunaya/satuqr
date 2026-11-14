@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SatuQR — Satu QR. Semua cara bayar.</title>
-<meta name="description" content="SatuQR: merchant Indonesia terima rupiah lewat QRIS dan terima crypto lewat NEAR Intents. Satu kode QR, dua dunia.">
+<title>SatuQR — One QR. Every way to pay.</title>
+<meta name="description" content="SatuQR: Indonesian merchants take rupiah via QRIS and crypto via NEAR Intents. One QR, two worlds.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316233f'/%3E%3Crect x='7' y='7' width='8' height='8' fill='white'/%3E%3Crect x='17' y='7' width='8' height='8' fill='white'/%3E%3Crect x='7' y='17' width='8' height='8' fill='white'/%3E%3Crect x='17' y='17' width='4' height='4' fill='white'/%3E%3Crect x='21' y='21' width='4' height='4' fill='white'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,19 +21,19 @@
     SatuQR
   </a>
   <nav class="nav-links">
-    <a href="#buat">Buat invoice</a>
-    <a href="#bayar">Bayar crypto</a>
+    <a href="#buat">Create invoice</a>
+    <a href="#bayar">Pay with crypto</a>
     <a href="#dashboard">Dashboard</a>
-    <a href="#cara">Cara kerja</a>
+    <a href="#cara">How it works</a>
   </nav>
-  <a class="nav-cta" href="#buat">Coba demo</a>
+  <a class="nav-cta" href="#buat">Try the demo</a>
 </header>
 
 <main id="top">
-  <!-- HERO: parallax scene, gaya Phalconyx -->
+  <!-- HERO: parallax scene, Phalconyx style -->
   <section class="hero">
     <div class="sky" aria-hidden="true">
-      <div class="plx mountain-wrap" data-speed="0.2"><img class="mountain" src="assets/mountain.webp" alt="Borobudur, sawah terasering, pohon kelapa, dan gunung berapi"></div>
+      <div class="plx mountain-wrap" data-speed="0.2"><img class="mountain" src="assets/mountain.webp" alt="Borobudur, rice terraces, coconut palms, and a volcano"></div>
       <div class="plx cloud-wrap cloud-a" data-speed="0.3">
         <div class="cloud-track track-slow"><img src="assets/cloud.png" alt=""><img src="assets/cloud.png" alt=""></div>
       </div>
@@ -42,55 +42,55 @@
       </div>
     </div>
     <div class="hero-copy">
-      <h1>Satu QR.<br>Semua cara bayar.</h1>
-      <p class="lede">Merchant Indonesia terima rupiah lewat QRIS dan terima crypto lewat NEAR Intents. Satu kode, dua dunia. Merchant terima USDC di NEAR, di akun <code>satuqr.near</code>.</p>
+      <h1>One QR.<br>Every way to pay.</h1>
+      <p class="lede">Indonesian merchants take rupiah via QRIS and crypto via NEAR Intents. One QR, two worlds. The merchant receives USDC on NEAR, at <code>satuqr.near</code>.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#buat">Buat invoice</a>
-        <a class="btn btn-ghost" href="#bayar">Bayar dengan crypto</a>
+        <a class="btn btn-primary" href="#buat">Create invoice</a>
+        <a class="btn btn-ghost" href="#bayar">Pay with crypto</a>
       </div>
-      <p class="hero-note">Demo live. Quote crypto masih dry-run, dana tidak bergerak.</p>
+      <p class="hero-note">Live demo. Crypto quotes are still dry-run; no funds move.</p>
       <p class="scroll-hint" aria-hidden="true">Scroll <span>&#8595;</span></p>
     </div>
     <div class="hero-stats reveal">
-      <div><strong>42 jt</strong><span>merchant QRIS</span></div>
-      <div><strong>13,66 M</strong><span>transaksi QRIS 2025</span></div>
-      <div><strong>0,01%</strong><span>fee 1Click pair stablecoin</span></div>
-      <div><strong>~20 dtk</strong><span>estimasi swap Intents</span></div>
+      <div><strong>42M</strong><span>QRIS merchants</span></div>
+      <div><strong>13.66B</strong><span>QRIS transactions in 2025</span></div>
+      <div><strong>0.01%</strong><span>1Click fee, stablecoin pairs</span></div>
+      <div><strong>~20 sec</strong><span>Intents swap estimate</span></div>
     </div>
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>QRIS &middot; NEAR Intents &middot; USDC &middot; Satu QR &middot; 42 juta merchant &middot; Tanpa akun NEAR &middot;&nbsp;</span><span>QRIS &middot; NEAR Intents &middot; USDC &middot; Satu QR &middot; 42 juta merchant &middot; Tanpa akun NEAR &middot;&nbsp;</span>
+        <span>QRIS &middot; NEAR Intents &middot; USDC &middot; Satu QR &middot; 42 million merchants &middot; No NEAR account &middot;&nbsp;</span><span>QRIS &middot; NEAR Intents &middot; USDC &middot; Satu QR &middot; 42 million merchants &middot; No NEAR account &middot;&nbsp;</span>
       </div>
     </div>
   </section>
 
-  <!-- BUAT INVOICE -->
+  <!-- CREATE INVOICE -->
   <section id="buat" class="section">
     <div class="section-head reveal">
       <p class="kicker">01 &middot; Merchant</p>
-      <h2>Buat invoice rupiah.</h2>
-      <p>Isi nama toko dan nominal. Backend ubah rupiah ke USDC dengan kurs Frankfurter, lalu buat payload QRIS dengan nominal.</p>
+      <h2>Create a rupiah invoice.</h2>
+      <p>Type the shop name and the amount. The backend converts rupiah to USDC at the Frankfurter rate, then builds a QRIS payload with the amount.</p>
     </div>
     <div class="grid-2">
       <form id="invoiceForm" class="card reveal">
-        <label>Nama merchant
+        <label>Merchant name
           <input name="merchant" type="text" value="Kopi Senja" maxlength="25" required>
         </label>
-        <label>Kota
+        <label>City
           <input name="city" type="text" value="JAKARTA" maxlength="15">
         </label>
-        <label>Nominal (Rp)
+        <label>Amount (IDR)
           <input name="amountIdr" type="number" value="50000" min="1000" max="100000000" step="1000" required>
         </label>
-        <label>Catatan (opsional)
-          <input name="note" type="text" maxlength="140" placeholder="cth: Kopi susu gula aren x2">
+        <label>Note (optional)
+          <input name="note" type="text" maxlength="140" placeholder="e.g. Iced coffee x2">
         </label>
-        <label>String QRIS statis toko (opsional)
-          <textarea name="qrisStatic" rows="3" placeholder="Tempel payload QRIS statismu di sini. Kosongkan untuk payload DEMO."></textarea>
+        <label>Shop static QRIS string (optional)
+          <textarea name="qrisStatic" rows="3" placeholder="Paste your static QRIS payload here. Leave empty for a DEMO payload."></textarea>
         </label>
         <div class="form-actions">
-          <button class="btn btn-primary" type="submit">Buat invoice</button>
-          <button class="btn btn-ghost" type="button" id="loadDemo">Muat invoice demo Rp50.000</button>
+          <button class="btn btn-primary" type="submit">Create invoice</button>
+          <button class="btn btn-ghost" type="button" id="loadDemo">Load demo invoice Rp50,000</button>
         </div>
         <p class="msg" id="invoiceMsg" role="status"></p>
       </form>
@@ -100,42 +100,42 @@
         <p class="qr-meta" id="qrMeta"></p>
         <p class="qr-id" id="qrId"></p>
         <div class="row">
-          <button class="btn btn-ghost" type="button" id="copyPayload">Salin payload QRIS</button>
-          <a class="btn btn-primary" href="#bayar" id="goPay">Bayar dengan crypto</a>
+          <button class="btn btn-ghost" type="button" id="copyPayload">Copy QRIS payload</button>
+          <a class="btn btn-primary" href="#bayar" id="goPay">Pay with crypto</a>
         </div>
-        <p class="fine">Pelanggan rupiah scan kode ini dengan aplikasi pembayaran apa pun. Tanpa string QRIS statis, ini payload DEMO.</p>
+        <p class="fine">Rupiah customers scan this code with any payment app. Without a static QRIS string, this is a DEMO payload.</p>
       </div>
     </div>
   </section>
 
-  <!-- BAYAR CRYPTO -->
+  <!-- PAY WITH CRYPTO -->
   <section id="bayar" class="section section-alt">
     <div class="section-head reveal">
-      <p class="kicker">02 &middot; Pembeli crypto</p>
-      <h2>Bayar dari chain mana pun.</h2>
-      <p>Pilih aset asal, masukkan alamat refund, lalu minta quote. NEAR Intents tukar asetmu jadi USDC dan kirim ke <code>satuqr.near</code>. Pembeli tidak butuh akun NEAR.</p>
+      <p class="kicker">02 &middot; Crypto buyer</p>
+      <h2>Pay from any chain.</h2>
+      <p>Pick the origin asset, enter a refund address, then request a quote. NEAR Intents swaps your asset into USDC and sends it to <code>satuqr.near</code>. The buyer needs no NEAR account.</p>
     </div>
     <div class="grid-2">
       <form id="quoteForm" class="card reveal">
-        <label>ID invoice
+        <label>Invoice ID
           <input name="invoiceId" id="quoteInvoiceId" type="text" placeholder="sq_..." required>
         </label>
-        <label>Aset asal
+        <label>Origin asset
           <select name="originAsset" id="assetSelect"></select>
         </label>
-        <label>Alamat refund (chain asal)
-          <input name="refundTo" type="text" placeholder="Alamat dompetmu di chain asal" required>
+        <label>Refund address (origin chain)
+          <input name="refundTo" type="text" placeholder="Your wallet address on the origin chain" required>
         </label>
-        <button class="btn btn-primary" type="submit">Minta quote (dry-run)</button>
+        <button class="btn btn-primary" type="submit">Request quote (dry-run)</button>
         <p class="msg" id="quoteMsg" role="status"></p>
       </form>
       <div class="card reveal" id="quoteCard" hidden>
-        <h3>Rincian quote</h3>
+        <h3>Quote details</h3>
         <dl class="fees" id="feeList"></dl>
         <p class="fine" id="quoteNote"></p>
         <div class="row">
-          <button class="btn btn-ghost" type="button" id="checkStatus">Cek status</button>
-          <button class="btn btn-ghost" type="button" id="markPaidBtn">Tandai lunas (QRIS)</button>
+          <button class="btn btn-ghost" type="button" id="checkStatus">Check status</button>
+          <button class="btn btn-ghost" type="button" id="markPaidBtn">Mark paid (QRIS)</button>
         </div>
         <p class="msg" id="statusMsg" role="status"></p>
       </div>
@@ -146,21 +146,21 @@
   <section id="dashboard" class="section">
     <div class="section-head reveal">
       <p class="kicker">03 &middot; Merchant</p>
-      <h2>Dashboard invoice.</h2>
-      <p>Semua invoice, status, dan ekspor CSV. Jalur rupiah dikonfirmasi manual oleh merchant, karena demo ini belum punya webhook acquirer.</p>
+      <h2>Invoice dashboard.</h2>
+      <p>All invoices, statuses, and CSV export. The rupiah rail is confirmed manually by the merchant, because this demo has no acquirer webhook yet.</p>
     </div>
     <div class="card reveal">
       <div class="row space-between">
-        <button class="btn btn-primary" type="button" id="refreshInvoices">Muat ulang</button>
-        <a class="btn btn-ghost" id="csvLink" href="https://api.aufa.eu.cc/api/merchant/invoices.csv" download>Unduh CSV</a>
+        <button class="btn btn-primary" type="button" id="refreshInvoices">Reload</button>
+        <a class="btn btn-ghost" id="csvLink" href="https://api.aufa.eu.cc/api/merchant/invoices.csv" download>Download CSV</a>
       </div>
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>ID</th><th>Merchant</th><th>Nominal</th><th>USDC</th><th>Status</th><th></th></tr>
+            <tr><th>ID</th><th>Merchant</th><th>Amount</th><th>USDC</th><th>Status</th><th></th></tr>
           </thead>
           <tbody id="invoiceRows">
-            <tr><td colspan="6">Belum dimuat. Tekan muat ulang.</td></tr>
+            <tr><td colspan="6">Not loaded yet. Press reload.</td></tr>
           </tbody>
         </table>
       </div>
@@ -168,20 +168,20 @@
     </div>
   </section>
 
-  <!-- CARA KERJA -->
+  <!-- HOW IT WORKS -->
   <section id="cara" class="section section-alt">
     <div class="section-head reveal">
-      <p class="kicker">04 &middot; Cara kerja</p>
-      <h2>Tiga langkah, dua dunia.</h2>
+      <p class="kicker">04 &middot; How it works</p>
+      <h2>Three steps, two worlds.</h2>
     </div>
     <ol class="steps">
-      <li class="reveal"><div class="step-img"><img src="assets/step-1.webp" alt="Merchant membuat invoice dengan QR di ponsel" loading="lazy"></div><strong>01</strong><h3>Merchant buat invoice</h3><p>Nominal rupiah diubah ke USDC dengan kurs Frankfurter. Payload QRIS dibuat dari string statis toko, atau payload DEMO bila kosong.</p></li>
-      <li class="reveal"><div class="step-img"><img src="assets/step-2.webp" alt="Pelanggan memilih bayar rupiah atau crypto" loading="lazy"></div><strong>02</strong><h3>Pelanggan pilih cara bayar</h3><p>Pelanggan rupiah scan QRIS seperti biasa. Pelanggan crypto pilih aset asal, dan NEAR Intents 1Click memberi quote EXACT_OUTPUT ke USDC di NEAR.</p></li>
-      <li class="reveal"><div class="step-img"><img src="assets/step-3.webp" alt="Merchant menerima USDC di dompet" loading="lazy"></div><strong>03</strong><h3>Merchant terima USDC</h3><p>USDC masuk ke satuqr.near. Status invoice berubah lunas. Merchant lihat semua invoice di dashboard dan ekspor CSV.</p></li>
+      <li class="reveal"><div class="step-img"><img src="assets/step-1.webp" alt="Merchant creating an invoice with a QR code on a phone" loading="lazy"></div><strong>01</strong><h3>Merchant creates an invoice</h3><p>The rupiah amount converts to USDC at the Frankfurter rate. The QRIS payload is built from the shop static string, or a DEMO payload when empty.</p></li>
+      <li class="reveal"><div class="step-img"><img src="assets/step-2.webp" alt="Customer choosing between rupiah and crypto" loading="lazy"></div><strong>02</strong><h3>Customer picks how to pay</h3><p>Rupiah customers scan QRIS as usual. Crypto customers pick an origin asset, and NEAR Intents 1Click returns an EXACT_OUTPUT quote into USDC on NEAR.</p></li>
+      <li class="reveal"><div class="step-img"><img src="assets/step-3.webp" alt="Merchant receiving USDC in a wallet" loading="lazy"></div><strong>03</strong><h3>Merchant receives USDC</h3><p>USDC lands in satuqr.near. The invoice status flips to paid. The merchant sees every invoice in the dashboard and exports a CSV.</p></li>
     </ol>
     <div class="card fine-card reveal">
-      <h3>Jujur soal demo ini</h3>
-      <p>Belum ada integrasi acquirer QRIS sungguhan. Integrasi itu butuh MID dan kerja sama bank. Jalur rupiah memakai QRIS statis merchant sendiri dan dikonfirmasi manual. Jalur rupiah ke crypto memakai off-ramp simulasi di demo. Intents hanya jalan di mainnet, jadi quote di sini dry-run dan dana tidak bergerak. Fee 1Click: 0,01% untuk pair stablecoin dengan API key, 0,20% untuk pair lain. Spread solver ada di dalam quote.</p>
+      <h3>Honest about this demo</h3>
+      <p>There is no live QRIS acquirer integration yet. That needs a MID and a bank partnership. The rupiah rail uses the merchant own static QRIS and is confirmed manually. The rupiah-to-crypto rail uses a simulated off-ramp in the demo. Intents only runs on mainnet, so quotes here are dry-run and no funds move. 1Click fee: 0.01% for stablecoin pairs with an API key, 0.20% for other pairs. The solver spread sits inside the quote.</p>
     </div>
   </section>
 </main>
@@ -189,7 +189,7 @@
 <footer class="footer">
   <div>
     <p class="brand">SatuQR</p>
-    <p>Satu QR. Semua cara bayar.</p>
+    <p>One QR. Every way to pay.</p>
   </div>
 </footer>
 </body>

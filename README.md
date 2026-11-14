@@ -106,7 +106,7 @@ Screenshot resources for the video edit: `video-assets/` (01-hero.png … 09-clo
 Satu QR for 42 million Indonesian merchants. Local customers pay rupiah with QRIS. Crypto customers pay USDC from any chain. The merchant receives USDC on NEAR, no NEAR account needed.
 
 Live demo: https://satuqr.aufa.eu.cc
-NEAR Hackathon 2026, Real-World Money track.
+Built at the NEAR Hackathon 2026 @NEARProtocol #NEARHackathon
 
 ## Submit checklist
 

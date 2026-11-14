@@ -4,7 +4,7 @@
 
 - Vertikal 1080x1920 (rekaman layar HP). Durasi 60-90 detik. Tanpa wajah.
 - Semua screenshot di folder ini: 780x1688 PNG (viewport HP 390x844 @2x).
-- Demo live: https://satuqr.pages.dev — Repo: https://github.com/aufaakmalbunaya/satuqr
+- Demo live: https://satuqr.aufa.eu.cc — Repo: https://github.com/aufaakmalbunaya/satuqr
 - Invoice yang dipakai di semua shot: `sq_mwh0wheimm7zvu` (Kopi Senja, Rp50.000, status pending, masih ada di KV).
 
 ## Adegan
@@ -16,7 +16,7 @@
 | 20-38 dtk | 04-pay-form.png lalu 05-quote-result.png | Form bayar crypto (USDC Solana), lalu rincian quote | "A crypto customer picks any asset, here USDC on Solana, and sees the exact quote before paying. The merchant receives exactly 2.74 USDC on NEAR. This is a dry run, so no funds move." |
 | 38-50 dtk | 06-status.png | Hasil cek status invoice | "The invoice status updates when the swap settles. No NEAR account needed, for the customer or the merchant." |
 | 50-65 dtk | 07-dashboard.png lalu 08-cara-kerja.png | Dashboard invoice, lalu 3 langkah berilustrasi | "The merchant tracks every invoice in the dashboard and exports a CSV. Three steps, two worlds." |
-| 65-75 dtk | 09-closing.png + end card | Footer, lalu kartu penutup | "One QR. Every way to pay. Try the live demo at satuqr.pages.dev." |
+| 65-75 dtk | 09-closing.png + end card | Footer, lalu kartu penutup | "One QR. Every way to pay. Try the live demo at satuqr.aufa.eu.cc." |
 
 ## Angka yang harus terbaca jelas di video
 
@@ -30,7 +30,7 @@
 - Tambahkan caption singkat di bawah tiap adegan (teks dari kolom Tampilan).
 - Alamat refund di 04-pay-form.png adalah alamat throwaway untuk dry quote. Jangan di-zoom sampai terbaca penuh. Tidak ada dana di alamat itu.
 - Tabel dashboard di 07-dashboard.png terpotong di tepi kanan pada layar HP. Potong (crop) ke bagian kiri tabel, atau zoom ke baris invoice pertama saja.
-- End card wajib menampilkan: https://satuqr.pages.dev dan https://github.com/aufaakmalbunaya/satuqr
+- End card wajib menampilkan: https://satuqr.aufa.eu.cc dan https://github.com/aufaakmalbunaya/satuqr
 - Musik latar opsional, ringan. Narasi boleh diganti suara AI atau teks saja.
 - Hasil akhir: file video 60-90 detik (MP4). Tautan video dimasukkan ke README dan ke form submit hackathon sebelum 15 Nov 2026 06:59 WIB.
 

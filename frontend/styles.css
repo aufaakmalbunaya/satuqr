@@ -77,12 +77,12 @@ code { background: var(--ice); padding: 0.1em 0.35em; border-radius: 6px; font-s
 .mountain-wrap { left: 0; right: 0; bottom: -2%; }
 .mountain { width: min(150vw, 1700px); margin: 0 auto; }
 .cloud-wrap { overflow: visible; }
-.cloud-a { top: 5%; left: 0; right: 0; }
-.cloud-b { top: 17%; left: 0; right: 0; }
+.cloud-a { top: 4%; left: 0; right: 0; }
+.cloud-b { top: 24%; left: 0; right: 0; }
 .cloud-track { display: flex; width: max-content; animation: drift 40s linear infinite; }
-.cloud-track img { width: min(62vw, 780px); flex: none; mix-blend-mode: multiply; }
-.cloud-b .cloud-track img { width: min(48vw, 600px); }
-.cloud-b .cloud-track { opacity: 0.75; }
+.cloud-track img { width: min(46vw, 580px); flex: none; mix-blend-mode: multiply; }
+.cloud-b .cloud-track img { width: min(34vw, 430px); }
+.cloud-b .cloud-track { opacity: 0.6; }
 .track-fast { animation-duration: 26s; animation-delay: -8s; }
 @keyframes drift {
   from { transform: translateX(-50%); }

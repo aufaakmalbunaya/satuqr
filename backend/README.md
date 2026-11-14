@@ -6,9 +6,9 @@ This backend is a Cloudflare Worker with zero dependencies. It stores invoices i
 
 ## Live demo (do X, see Y)
 
-Base URL after deploy: `https://satuqr-backend.qriscode.workers.dev`
+Base URL after deploy: `https://api.aufa.eu.cc`
 
-1. Check health. `curl https://satuqr-backend.qriscode.workers.dev/health`
+1. Check health. `curl https://api.aufa.eu.cc/health`
    See `ok: true` and `liveEnabled: false`.
 2. Create an invoice. `curl -X POST .../api/invoices -d '{"merchant":"Kopi Senja","amountIdr":50000}'`
    See `usdc`, the live USD to IDR rate, and `qrPayload` with `qrDemo: true`.

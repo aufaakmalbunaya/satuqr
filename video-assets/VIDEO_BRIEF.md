@@ -5,7 +5,7 @@
 - Vertikal 1080x1920 (rekaman layar HP). Durasi 60-90 detik. Tanpa wajah.
 - Semua screenshot di folder ini: 780x1688 PNG (viewport HP 390x844 @2x).
 - Demo live: https://satuqr.pages.dev — Repo: https://github.com/aufaakmalbunaya/satuqr
-- Invoice yang dipakai di semua shot: `sq_mwh0qchnm55tjr` (Kopi Senja, Rp50.000, status pending, masih ada di KV).
+- Invoice yang dipakai di semua shot: `sq_mwh0wheimm7zvu` (Kopi Senja, Rp50.000, status pending, masih ada di KV).
 
 ## Adegan
 
